@@ -1,0 +1,81 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/64c21e5a9064be376db6dcc0
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "ahaha",
+    "email": "alana@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/users/64c21df09064be376db6dcbd
+Content-Type: application/json
+
+{
+    "name": "broooooooo",
+    "email": "sdfsdfsdf@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/64c21df09064be376db6dcbd
+Content-Type: application/json
+
+###
+GET http://localhost:5000/videos
+
+###
+POST http://localhost:5000/videos
+Content-Type: application/json
+
+{
+  "videoID": "u9Mv98Gr5pY",
+  "videoThumbnail": "https://image.tmdb.org/t/p/original/gU8S1vujZzCDYdxRTwsz4wCdWld.jpg",
+  "videoTitle": "Venom",
+  "product": [
+    {
+      "productLink": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "productTitle": "mongoose",
+      "productPrice": 1000
+    },
+    {
+      "productLink": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "productTitle": "express",
+      "productPrice": 2000
+    },
+    {
+      "productLink": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "productTitle": "mongodb",
+      "productPrice": 3000
+    }
+  ],
+  "comment": [
+    {
+      "commentUsername": "Alana",
+      "commentContent": "goo2222d"
+    },
+    {
+      "commentUsername": "Aldo",
+      "commentContent": "goo3444d"
+    },
+    {
+      "commentUsername": "Dewa",
+      "commentContent": "go5555od"
+    }
+  ]
+}
+
+###
+PATCH http://localhost:5000/videos/64da9bbb8e70a0da37eebe2b
+Content-Type: application/json
+
+{
+        "commentUsername": "Aldo",
+        "commentContent": "Anjadsdsdsdsdsyl;;l;gfgfgfgflyy"
+}
