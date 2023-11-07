@@ -6,7 +6,7 @@ const User = mongoose.Schema({
         required: true
     },
     email: {
-        type: String, 
+        type: String,
         required: true
     },
     gender: {
@@ -15,4 +15,4 @@ const User = mongoose.Schema({
     }
 });
 
-export default mongoose.model('Users', User);
+export default mongoose.model('users', User);
