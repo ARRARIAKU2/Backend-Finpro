@@ -44,4 +44,4 @@ const Video = mongoose.Schema({
     }]
 });
 
-export default mongoose.model('Videos', Video);
+export default mongoose.model('videos', Video);
